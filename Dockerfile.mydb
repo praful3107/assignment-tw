@@ -1,0 +1,8 @@
+FROM mysql:latest
+ENV MYSQL_DB=mediawiki
+ENV MYSQL_USER=wikiuser
+ENV MYSQL_PWD=wikisec
+ENV MYSQL_ROOT_PWD=rootsec
+COPY init.sql /docker-entrypoint-initdb.d
+EXPOSE 3306
+VOLUME /var/lib/mysql
