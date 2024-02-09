@@ -1,8 +1,17 @@
-FROM mysql:latest
+# Pull base image
+FROM mysql:8.0.36
+
+# Set the environment variable for thename of DB, username, password, rrot user and root password that will be created when the container is initialized.
 ENV MYSQL_DB=mediawiki
 ENV MYSQL_USER=wikiuser
 ENV MYSQL_PWD=wikisec
 ENV MYSQL_ROOT_PWD=rootsec
+
+#Copy SQL script from host machine to the container's directory
 COPY init.sql /docker-entrypoint-initdb.d
+
+#Expose port of the container to the host machine
 EXPOSE 3306
+
+#Create a volume 
 VOLUME /var/lib/mysql
