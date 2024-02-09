@@ -1,6 +1,6 @@
 //Dockerfile.app
 
-* This Dockerfile assumes that the wiki application has the following files in the same directory:
+* This Dockerfile assumes that the wiki application has the below two files in the same directory.
 
 * index.php: the main PHP script that defines the routes and logic of the mediawiki application.
 * mysql database file that stores the wiki pages and their content
