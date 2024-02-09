@@ -11,7 +11,7 @@
   
 * It will also mount the init.sql file to the container and execute it when the database is initialized.
 
-// Build the image from the dockerfiles and lush them to any registry (jfrog,nexus,acr,etc.)
+// Build the image from the dockerfiles and push them to any registry (jfrog,nexus,acr,etc.)
 
 // Create a helmchart for the application that defines Kubernetes resources needed to run the application such as deployment, service and ingress.
 
