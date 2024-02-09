@@ -16,3 +16,8 @@
 // Create a helmchart for the application that defines Kubernetes resources needed to run the application such as deployment, service and ingress.
 
 // Create a helmchart for the database that defines Kubernetes resources needed to run the DB such as statefulset, service and persistentvolumeclaim.
+
+
+// Automation using Azure DevOps CICD pipeline
+* Create CI pipeline(build pipeline). Pipeline will be based on yaml template. This pipeline will checkout the code from repos, build and push the docker image to registry.
+* Create CD pipeline(release pipeline). Configure artifacts as required, in this case dicker image will be pulled from the registry.
