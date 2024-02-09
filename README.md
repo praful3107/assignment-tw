@@ -21,4 +21,8 @@
 // Automation using Azure DevOps CICD pipeline
 * Create CI pipeline(build pipeline). Pipeline will be based on yaml template. This pipeline will checkout the code from repos, build and push the docker image to registry, package the helm chart tagged with a version no and push helm package to registry.
 * Create CD pipeline(release pipeline). In this case docker image and helm package are the artifacts which will be used for deployment on k8s cluster.
-* Deploy the helm chart to Dev/QA/Staging environment 
+* Deploy the helm chart to Dev/QA/Staging environments.
+* Helm upgrade command can be used with the --install flag to support the first install and subsequent upgrades.
+* Wait for an approver to approve or reject the deployment.
+* Retag the container image for release and push the release tag to the container registry.
+* Deploy the helm chart in production cluster.
