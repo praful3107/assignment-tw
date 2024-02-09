@@ -1,0 +1,12 @@
+replicaCount: 1
+image:
+  repository: myuser/mediawiki-db
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 3306
+persistence:
+  enabled: true
+  storageClass: standard
+  accessMode: ReadWriteOnce
+  size: 8Gi
