@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mediawiki-app
+description: A Helm chart for deploying MediaWiki application on Kubernetes
+type: application
+version: 0.1.0
+appVersion: 1.30.0
