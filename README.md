@@ -19,5 +19,5 @@
 
 
 // Automation using Azure DevOps CICD pipeline
-* Create CI pipeline(build pipeline). Pipeline will be based on yaml template. This pipeline will checkout the code from repos, build and push the docker image to registry.
+* Create CI pipeline(build pipeline). Pipeline will be based on yaml template. This pipeline will checkout the code from repos, build and push the docker image to registry, package the helm chart tagged with a version no and push helm package to registry.
 * Create CD pipeline(release pipeline). Configure artifacts as required, in this case dicker image will be pulled from the registry.
