@@ -6,3 +6,11 @@
 app.kubernetes.io/name: {{ "include mediawiki-app.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
+
+{{- define "mediawiki-app.labels" -}}
+app.kubernetes.io/name: {{ "include mediawiki-app.name" . }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/version: {{ .Chart.AppVersion }}
+{{- end -}}
+
+
