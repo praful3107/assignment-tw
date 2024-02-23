@@ -1,7 +1,7 @@
 # Pull base image
 FROM mysql:8.0.36
 
-# Set the environment variable for thename of DB, username, password, rrot user and root password that will be created when the container is initialized.
+# Set the environment variable for the name of DB, username, password, root user and root password that will be created when the container is initialized.
 ENV MYSQL_DB=mediawiki
 ENV MYSQL_USER=wikiuser
 ENV MYSQL_PWD=wikisec
